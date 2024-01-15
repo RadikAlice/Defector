@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhnb6bon23jcb"]
+
+[ext_resource type="Script" path="res://scene/buttons/start.gd" id="1_ch5do"]
+
+[sub_resource type="Theme" id="Theme_7ngvf"]
+
+[node name="start" type="Button"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -38.0
+offset_top = -202.0
+offset_right = 39.0
+offset_bottom = -167.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_7ngvf")
+action_mode = 0
+keep_pressed_outside = true
+text = "Start"
+icon_alignment = 1
+script = ExtResource("1_ch5do")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dobse8amnn3px"]
+[gd_scene load_steps=3 format=3 uid="uid://dobse8amnn3px"]
+
+[ext_resource type="Script" path="res://scene/back_to_title.gd" id="1_746s2"]
 
 [sub_resource type="SystemFont" id="SystemFont_w0sn3"]
 
@@ -23,13 +25,35 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -83.0
-offset_top = -264.0
-offset_right = 257.0
-offset_bottom = -70.0
+offset_left = -164.0
+offset_top = -249.0
+offset_right = 270.0
+offset_bottom = -55.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = SubResource("SystemFont_w0sn3")
 theme_override_font_sizes/normal_font_size = 16
-text = "These are credits,  hi"
+text = "These are credits, hi
+
+Tools used
+
+Godot 4.1.2 Stable
+
+LibreSprite
+
+Krita
+
+Procedural Character Generator by LunarCore Games"
+fit_content = true
+
+[node name="back_to_title" type="Button" parent="."]
+layout_mode = 0
+offset_left = -369.0
+offset_top = -262.0
+offset_right = -298.0
+offset_bottom = -231.0
+text = "Go Back"
+script = ExtResource("1_746s2")
+
+[connection signal="pressed" from="back_to_title" to="back_to_title" method="_on_pressed"]
